@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyydä Tarjous | OwlEye | Precision Drone Services</title>
+    <link rel="icon" type="image/webp" href="kuvat/favicon.webp">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="Owl Eye transparent.webp" alt="OwlEye Logo" class="logo-img">
+                </a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link" data-text="ETUSIVU" data-fi="Etusivu" data-en="Home">Etusivu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="palvelut.html" class="nav-link" data-text="PALVELUT" data-fi="Palvelut" data-en="Services">Palvelut</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a href="referenssit.html" class="nav-link" data-text="REFERENSSIT" data-fi="Referenssit" data-en="References">Referenssit</a>
+                </li> -->
+                <li class="nav-item">
+                    <a href="yritys.html" class="nav-link" data-text="YRITYS" data-fi="Yritys" data-en="Company">Yritys</a>
+                </li>
+                <li class="nav-item">
+                    <a href="yhteystiedot.html" class="nav-link" data-text="YHTEYSTIEDOT" data-fi="Yhteystiedot" data-en="Contact">Yhteystiedot</a>
+                </li>
+                <li class="nav-item">
+                    <a href="tarjous.html" class="nav-link cta-nav active" data-text="PYYDÄ TARJOUS" data-fi="Pyydä Tarjous" data-en="Get Quote">Pyydä Tarjous</a>
+                </li>
+                <li class="nav-item language-switcher">
+                    <button class="lang-btn active" data-lang="fi">FI</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-fi="PYYDÄ TARJOUS" data-en="REQUEST A QUOTE">PYYDÄ TARJOUS</h1>
+            <p data-fi="Kerro projektistasi ja saat räätälöidyn tarjouksen 24 tunnin sisällä" data-en="Tell us about your project and get a customized quote within 24 hours">Kerro projektistasi ja saat räätälöidyn tarjouksen 24 tunnin sisällä</p>
+        </div>
+    </section>
+
+    <!-- Quote Form Section -->
+    <section class="quote-page">
+        <div class="container">
+            <div class="quote-content">
+                
+                <!-- Quote Form -->
+                <div class="quote-form-section">
+                    <form class="quote-form" id="quote-form">
+                        <h3 data-fi="Ota yhteyttä" data-en="Get In Touch">Ota yhteyttä</h3>
+                        <p data-fi="Kerro meille projektistasi ja saat tarjouksen 24 tunnin sisällä." data-en="Tell us about your project and get a quote within 24 hours.">Kerro meille projektistasi ja saat tarjouksen 24 tunnin sisällä.</p>
+                        
+                        <!-- Contact Information -->
+                        <div class="form-section">
+                            <div class="form-group">
+                                <label for="name" data-fi="Nimi *" data-en="Name *">Nimi *</label>
+                                <input type="text" id="name" name="from_name" data-fi-placeholder="Koko nimi" data-en-placeholder="Full Name" placeholder="Koko nimi" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" data-fi="Sähköposti *" data-en="Email *">Sähköposti *</label>
+                                <input type="email" id="email" name="from_email" data-fi-placeholder="sähköposti@esimerkki.fi" data-en-placeholder="email@example.com" placeholder="sähköposti@esimerkki.fi" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone" data-fi="Puhelinnumero *" data-en="Phone Number *">Puhelinnumero *</label>
+                                <input type="tel" id="phone" name="phone" data-fi-placeholder="+358 40 123 4567" data-en-placeholder="+358 40 123 4567" placeholder="+358 40 123 4567" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company" data-fi="Yritys" data-en="Company">Yritys</label>
+                                <input type="text" id="company" name="company" data-fi-placeholder="Yrityksen nimi" data-en-placeholder="Company name" placeholder="Yrityksen nimi">
+                            </div>
+                        </div>
+                        
+                        <!-- Project Description -->
+                        <div class="form-section">
+                            <div class="form-group">
+                                <label for="message" data-fi="Kerro projektistasi *" data-en="Tell us about your project *">Kerro projektistasi *</label>
+                                <textarea id="message" name="message" rows="10" data-fi-placeholder="Kerro meille projektistasi: Mitä palvelua tarvitset? Missä projekti sijaitsee? Mikä on aikataulu? Mitä haluat saavuttaa?" data-en-placeholder="Tell us about your project: What service do you need? Where is the project located? What is the timeline? What do you want to achieve?" placeholder="Kerro meille projektistasi: Mitä palvelua tarvitset? Missä projekti sijaitsee? Mikä on aikataulu? Mitä haluat saavuttaa?" required></textarea>
+                            </div>
+                        </div>
+                        
+                        <!-- Consent -->
+                        <div class="form-section">
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="privacy" required>
+                                    <span class="checkmark"></span>
+                                    <span data-fi="Hyväksyn tietojen käsittelyn tarjouksen tekemistä varten *" data-en="I accept the processing of data for quote preparation *">Hyväksyn tietojen käsittelyn tarjouksen tekemistä varten *</span>
+                                </label>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="marketing">
+                                    <span class="checkmark"></span>
+                                    <span data-fi="Haluan saada markkinointiviestejä ja uutiskirjeen OwlEyelta" data-en="I want to receive marketing messages and newsletter from OwlEye">Haluan saada markkinointiviestejä ja uutiskirjeen OwlEyelta</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn" data-fi="Pyydä Tarjous" data-en="Request Quote">Pyydä Tarjous</button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="quote-process">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-fi="MITÄ TAPAHTUU SEURAAVAKSI?" data-en="WHAT HAPPENS NEXT?">MITÄ TAPAHTUU SEURAAVAKSI?</h2>
+                <p data-fi="Näin tarjousprosessi etenee" data-en="How the quote process proceeds">Näin tarjousprosessi etenee</p>
+            </div>
+            
+            <div class="process-timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-number">1</div>
+                    <div class="timeline-content">
+                        <h3 data-fi="Lomakkeen lähetys" data-en="Form Submission">Lomakkeen lähetys</h3>
+                        <p data-fi="Lähetät täytetyn lomakkeen ja saat välittömän vahvistuksen" data-en="You send the completed form and receive immediate confirmation">Lähetät täytetyn lomakkeen ja saat välittömän vahvistuksen</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-number">2</div>
+                    <div class="timeline-content">
+                        <h3 data-fi="Projektin analysointi" data-en="Project Analysis">Projektin analysointi</h3>
+                        <p data-fi="Analysoimme projektisi vaatimukset ja suunnittelemme toteutuksen" data-en="We analyze your project requirements and plan the implementation">Analysoimme projektisi vaatimukset ja suunnittelemme toteutuksen</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-number">3</div>
+                    <div class="timeline-content">
+                        <h3 data-fi="Tarjouksen toimitus" data-en="Quote Delivery">Tarjouksen toimitus</h3>
+                        <p data-fi="Saat yksityiskohtaisen tarjouksen 24 tunnin sisällä" data-en="You receive a detailed quote within 24 hours">Saat yksityiskohtaisen tarjouksen 24 tunnin sisällä</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-number">4</div>
+                    <div class="timeline-content">
+                        <h3 data-fi="Projektin aloitus" data-en="Project Start">Projektin aloitus</h3>
+                        <p data-fi="Hyväksyttyäsi tarjouksen aloitamme projektin sovittuna ajankohtana" data-en="After accepting the quote, we start the project at the agreed time">Hyväksyttyäsi tarjouksen aloitamme projektin sovittuna ajankohtana</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                            <img src="Owl Eye transparent.webp" alt="OwlEye Logo" class="footer-logo-img">
+                        </a>
+                    </div>
+                    <p data-fi="Tarkkuusilmakuvaus- ja kartoituspalveluja nykyaikaiseen maailmaan." data-en="Precision aerial intelligence and mapping services for the modern world.">Tarkkuusilmakuvaus- ja kartoituspalveluja nykyaikaiseen maailmaan.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-fi="Palvelut" data-en="Services">Palvelut</h4>
+                    <ul>
+                        <li><a href="palvelut.html" data-fi="Dronepalvelut" data-en="Drone Services">Dronepalvelut</a></li>
+                        <li><a href="palvelut.html" data-fi="Suunnittelupalvelut" data-en="Design Services">Suunnittelupalvelut</a></li>
+                        <li><a href="palvelut.html" data-fi="Kaikki palvelut" data-en="All Services">Kaikki palvelut</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-fi="Yritys" data-en="Company">Yritys</h4>
+                    <ul>
+                        <li><a href="yritys.html" data-fi="Tietoa meistä" data-en="About Us">Tietoa meistä</a></li>
+                        <!-- <li><a href="referenssit.html" data-fi="Referenssit" data-en="References">Referenssit</a></li> -->
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-fi="Ota yhteyttä" data-en="Get In Touch">Ota yhteyttä</h4>
+                    <ul>
+                        <li><a href="yhteystiedot.html" data-fi="Yhteystiedot" data-en="Contact Info">Yhteystiedot</a></li>
+                        <li><a href="tarjous.html" data-fi="Pyydä Tarjous" data-en="Request Quote">Pyydä Tarjous</a></li>
+                        <li><a href="yhteystiedot.html" data-fi="Usein kysytyt kysymykset" data-en="FAQ">Usein kysytyt kysymykset</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-fi="Yhteystiedot" data-en="Contact Info">Yhteystiedot</h4>
+                    <p><span data-fi="Y-tunnus:" data-en="Business ID:">Y-tunnus:</span> 3167196-6<br>
+                    Tontinkatu 15, 21260 Raisio<br>
+                    info@owleye.fi<br>
+                    <span data-fi="Saatavilla konsultaatioihin" data-en="Available for consultations">Saatavilla konsultaatioihin</span></p>
+                </div>
+            </div>
+            <div class="footer-certifications-section">
+                <img src="kuvat/drone_license.png" alt="drone_license" class="certification-img-large drone-license">
+                <img src="kuvat/luotettava_kumppani_logo.webp" alt="Luotettava Kumppani" class="certification-img-large">
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 OwlEye. <span data-fi="Kaikki oikeudet pidätetään." data-en="All rights reserved.">Kaikki oikeudet pidätetään.</span> | <span data-fi="Y-tunnus:" data-en="Business ID:">Y-tunnus:</span> 3167196-6 | <span data-fi="Lisensoitu & Vakuutettu" data-en="Licensed & Insured">Lisensoitu & Vakuutettu</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OwlEye | Precision Drone Services</title>
+    <link rel="icon" type="image/webp" href="kuvat/favicon.webp">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Floating Drone -->
+    <div class="floating-drone">
+        <img src="kuvat/follower.drone.webp" alt="Drone">
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="Owl Eye transparent.webp" alt="OwlEye Logo" class="logo-img">
+                </a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link" data-text="ETUSIVU" data-fi="Etusivu" data-en="Home">Etusivu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="palvelut.html" class="nav-link" data-text="PALVELUT" data-fi="Palvelut" data-en="Services">Palvelut</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a href="referenssit.html" class="nav-link" data-text="REFERENSSIT" data-fi="Referenssit" data-en="References">Referenssit</a>
+                </li> -->
+                <li class="nav-item">
+                    <a href="yritys.html" class="nav-link" data-text="YRITYS" data-fi="Yritys" data-en="Company">Yritys</a>
+                </li>
+                <li class="nav-item">
+                    <a href="yhteystiedot.html" class="nav-link" data-text="YHTEYSTIEDOT" data-fi="Yhteystiedot" data-en="Contact">Yhteystiedot</a>
+                </li>
+                <li class="nav-item">
+                    <a href="tarjous.html" class="nav-link cta-nav" data-text="PYYDÄ TARJOUS" data-fi="Pyydä Tarjous" data-en="Get Quote">Pyydä Tarjous</a>
+                </li>
+                <li class="nav-item language-switcher">
+                    <button class="lang-btn active" data-lang="fi">FI</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Full-Screen Image -->
+    <section class="hero" id="hero">
+        <div class="hero-video">
+            <img src="kuvat/herokuva.webp" alt="Drone" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-text="KATTAVAT DRONEKUVAUS- JA TARKASTUSPALVELUT." data-fi="Kattavat dronekuvaus- ja tarkastuspalvelut." data-en="Comprehensive Drone Imaging and Inspection Services.">Kattavat dronekuvaus- ja tarkastuspalvelut.</h1>
+            <p class="hero-subtitle" data-text="Turvalliset ratkaisut kaikkiin ympäristöihin. Kun tarvitset silmät sinne, mihin et itse pääse." data-fi="Turvalliset ratkaisut kaikkiin ympäristöihin.<br>Kun tarvitset silmät sinne, mihin et itse pääse." data-en="Safe solutions for all environments.<br>When you need eyes where you can't reach yourself.">Turvalliset ratkaisut kaikkiin ympäristöihin.<br>Kun tarvitset silmät sinne, mihin et itse pääse.</p>
+        </div>
+        <div class="scroll-arrow"></div>
+    </section>
+
+    <!-- What We Do Section -->
+    <section class="what-we-do" id="what-we-do">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-fi="MITÄ ME TEEMME" data-en="WHAT WE DO">MITÄ ME TEEMME</h2>
+                <p data-fi="OwlEye tarjoaa ammattitasoisia drone- ja suunnittelupalveluita yrityksille ja organisaatioille" data-en="OwlEye provides professional drone and design services for businesses and organizations">OwlEye tarjoaa ammattitasoisia drone- ja suunnittelupalveluita yrityksille ja organisaatioille</p>
+            </div>
+            
+            <div class="services-overview">
+                <!-- Drone Services -->
+                <div class="service-overview-card drone-services-bg" data-aos="fade-up">
+                    <h3 data-fi="DRONEPALVELUT" data-en="DRONE SERVICES">DRONEPALVELUT</h3>
+                    <p data-fi="Kun sinun tarvitsee päästä ahtaisiin ja vaikeakulkuisiin kohteisiin helposti ja kustannustehokkaasti, oikea ratkaisu on drone." data-en="When you need to access tight and hard-to-reach locations easily and cost-effectively, the right solution is a drone.">Kun sinun tarvitsee päästä ahtaisiin ja vaikeakulkuisiin kohteisiin helposti ja kustannustehokkaasti, oikea ratkaisu on drone.</p>
+                    <ul class="service-overview-list">
+                        <li data-fi="Visuaaliset tarkastukset ja mittaukset" data-en="Visual inspections and measurements">Visuaaliset tarkastukset ja mittaukset</li>
+                        <li data-fi="Ilma- ja ortokuvaukset" data-en="Aerial and orthophotography">Ilma- ja ortokuvaukset</li>
+                        <li data-fi="Lämpökuvaus" data-en="Thermal imaging">Lämpökuvaus</li>
+                        <li data-fi="Pistepilvet ja fotogrammetriset 3D-mallit" data-en="Point clouds and photogrammetric 3D models">Pistepilvet ja fotogrammetriset 3D-mallit</li>
+                        <li data-fi="FPV-kuvaus ja suljettujen tilojen tarkastus (kattilat, putkistot, tankit)" data-en="FPV filming and confined space inspection (boilers, pipes, tanks)">FPV-kuvaus ja suljettujen tilojen tarkastus (kattilat, putkistot, tankit)</li>
+                    </ul>
+                    <a href="palvelut.html" class="service-overview-link" data-fi="Katso kaikki dronepalvelut" data-en="View all drone services">Katso kaikki dronepalvelut</a>
+                </div>
+
+                <!-- Design Services -->
+                <div class="service-overview-card design-services-bg" data-aos="fade-up" data-aos-delay="200">
+                    <h3 data-fi="SUUNNITTELUPALVELUT" data-en="DESIGN SERVICES">SUUNNITTELUPALVELUT</h3>
+                    <p data-fi="Kun tarvitset ideasi tueksi konkretiaa. 3D-mallinnus, valmistuspiirustukset ja ideat digitaaliseen muotoon avaimet käteen periaatteella." data-en="When you need concrete support for your ideas. 3D modeling, manufacturing drawings, and ideas in digital form on a turnkey basis.">Kun tarvitset ideasi tueksi konkretiaa. 3D-mallinnus, valmistuspiirustukset ja ideat digitaaliseen muotoon avaimet käteen periaatteella.</p>
+                    <ul class="service-overview-list">
+                        <li data-fi="3D skannaus" data-en="3D scanning">3D skannaus</li>
+                        <li data-fi="Layout piirustukset" data-en="Layout drawings">Layout piirustukset</li>
+                        <li data-fi="3D-mallinnus ja valmistuskuvat" data-en="3D modeling and manufacturing drawings">3D-mallinnus ja valmistuskuvat</li>
+                        <li data-fi="Muotoilu ja prototyyppien suunnittelu" data-en="Design and prototype development">Muotoilu ja prototyyppien suunnittelu</li>
+                        <li data-fi="3D tulostus" data-en="3D printing">3D tulostus</li>
+                    </ul>
+                    <a href="palvelut.html" class="service-overview-link" data-fi="Katso suunnittelupalvelut" data-en="View design services">Katso suunnittelupalvelut</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Quote Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 data-fi="VALMIS NOSTAMAAN PROJEKTISI UUDELLE TASOLLE?" data-en="READY TO ELEVATE YOUR PROJECT?">VALMIS NOSTAMAAN PROJEKTISI UUDELLE TASOLLE?</h2>
+                    <p data-fi="Hanki tarkkuusilmakuvausta ja huippulaatua visuaalista sisältöä räätälöityä juuri sinun vaatimuksiisi." data-en="Get precision aerial intelligence and stunning visual content tailored to your specific requirements.">Hanki tarkkuusilmakuvausta ja huippulaatua visuaalista sisältöä räätälöityä juuri sinun vaatimuksiisi.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <strong data-fi="Y-tunnus:" data-en="Business ID:">Y-tunnus:</strong>&nbsp;3167196-6
+                        </div>
+                        <div class="contact-item">
+                            <strong data-fi="Osoite:" data-en="Address:">Osoite:</strong>&nbsp;Tontinkatu 15, 21260 Raisio
+                        </div>
+                        <div class="contact-item">
+                            <strong data-fi="Sähköposti:" data-en="Email:">Sähköposti:</strong>&nbsp;info@owleye.fi
+                        </div>
+                        <div class="contact-item">
+                            <strong data-fi="Vastausaika:" data-en="Response Time:">Vastausaika:</strong>&nbsp;<span data-fi="24 tunnin sisällä" data-en="Within 24 hours">24 tunnin sisällä</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-cta-box">
+                    <h3 data-fi="Ota yhteyttä" data-en="Get in Touch">Ota yhteyttä</h3>
+                    <p data-fi="Haluatko keskustella projektistasi tai pyytää tarjouksen? Valitse sopivin vaihtoehto:" data-en="Want to discuss your project or request a quote? Choose the most suitable option:">Haluatko keskustella projektistasi tai pyytää tarjouksen? Valitse sopivin vaihtoehto:</p>
+                    <div class="cta-buttons">
+                        <a href="tarjous.html" class="cta-button primary" data-fi="Pyydä Tarjous" data-en="Request Quote">Pyydä Tarjous</a>
+                        <a href="yhteystiedot.html" class="cta-button secondary" data-fi="Yhteystiedot" data-en="Contact Info">Yhteystiedot</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                            <img src="Owl Eye transparent.webp" alt="OwlEye Logo" class="footer-logo-img">
+                        </a>
+                    </div>
+                    <p data-fi="Tarkkuusilmakuvaus- ja kartoituspalveluja nykyaikaiseen maailmaan." data-en="Precision aerial intelligence and mapping services for the modern world.">Tarkkuusilmakuvaus- ja kartoituspalveluja nykyaikaiseen maailmaan.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-fi="Palvelut" data-en="Services">Palvelut</h4>
+                    <ul>
+                        <li><a href="palvelut.html" data-fi="Dronepalvelut" data-en="Drone Services">Dronepalvelut</a></li>
+                        <li><a href="palvelut.html" data-fi="Suunnittelupalvelut" data-en="Design Services">Suunnittelupalvelut</a></li>
+                        <li><a href="palvelut.html" data-fi="Kaikki palvelut" data-en="All Services">Kaikki palvelut</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-fi="Yritys" data-en="Company">Yritys</h4>
+                    <ul>
+                        <li><a href="yritys.html" data-fi="Tietoa meistä" data-en="About Us">Tietoa meistä</a></li>
+                        <!-- <li><a href="referenssit.html" data-fi="Referenssit" data-en="References">Referenssit</a></li> -->
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-fi="Ota yhteyttä" data-en="Get In Touch">Ota yhteyttä</h4>
+                    <ul>
+                        <li><a href="yhteystiedot.html" data-fi="Yhteystiedot" data-en="Contact Info">Yhteystiedot</a></li>
+                        <li><a href="tarjous.html" data-fi="Pyydä Tarjous" data-en="Request Quote">Pyydä Tarjous</a></li>
+                        <li><a href="yhteystiedot.html" data-fi="Usein kysytyt kysymykset" data-en="FAQ">Usein kysytyt kysymykset</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-fi="Yhteystiedot" data-en="Contact Info">Yhteystiedot</h4>
+                    <p><span data-fi="Y-tunnus:" data-en="Business ID:">Y-tunnus:</span> 3167196-6<br>
+                    Tontinkatu 15, 21260 Raisio<br>
+                    info@owleye.fi<br>
+                    <span data-fi="Saatavilla konsultaatioihin" data-en="Available for consultations">Saatavilla konsultaatioihin</span></p>
+                </div>
+            </div>
+            <div class="footer-certifications-section">
+                <img src="kuvat/drone_license.png" alt="drone_license" class="certification-img-large drone-license">
+                <img src="kuvat/luotettava_kumppani_logo.webp" alt="Luotettava Kumppani" class="certification-img-large">
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 OwlEye. <span data-fi="Kaikki oikeudet pidätetään." data-en="All rights reserved.">Kaikki oikeudet pidätetään.</span> | <span data-fi="Y-tunnus:" data-en="Business ID:">Y-tunnus:</span> 3167196-6 | <span data-fi="Lisensoitu & Vakuutettu" data-en="Licensed & Insured">Lisensoitu & Vakuutettu</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
