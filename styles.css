@@ -395,7 +395,7 @@ h1, h2, h3, h4, h5, h6,
 
 .services-overview {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 500px), 1fr));
     gap: 4rem;
     margin-bottom: 4rem;
 }
@@ -1065,7 +1065,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .footer-logo-img {
-    height: 35px;
+    height: 40px;
     width: auto;
     opacity: 1;
     transition: all 0.3s ease;
@@ -1095,6 +1095,10 @@ h1, h2, h3, h4, h5, h6,
     color: var(--text-secondary);
     line-height: 1.6;
     margin-bottom: 1rem;
+}
+
+.footer-section p br {
+    display: inline;
 }
 
 .footer-section ul {
@@ -1355,6 +1359,36 @@ h1, h2, h3, h4, h5, h6,
     .team-member {
         margin-bottom: 2rem;
     }
+    
+    .service-overview-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .service-overview-card h3 {
+        font-size: 1.75rem;
+    }
+    
+    .service-overview-card p {
+        font-size: 1rem;
+    }
+    
+    .service-overview-list li {
+        font-size: 0.95rem;
+    }
+    
+    /* Fix page header spacing on mobile */
+    .page-header {
+        padding-top: 8rem !important;
+        padding-bottom: 3rem !important;
+    }
+    
+    .page-header h1 {
+        font-size: 2rem !important;
+    }
+    
+    .page-header p {
+        font-size: 1rem !important;
+    }
 
     .process-arrow {
         display: none !important;
@@ -1457,6 +1491,11 @@ h1, h2, h3, h4, h5, h6,
     h2 { font-size: 1.75rem !important; }
     h3 { font-size: 1.5rem !important; }
     
+    .page-header {
+        padding-top: 7rem !important;
+        padding-bottom: 2.5rem !important;
+    }
+    
     /* Stack buttons vertically */
     .cta-buttons {
         flex-direction: column;
@@ -1491,6 +1530,7 @@ h1, h2, h3, h4, h5, h6,
     background: var(--gradient-section);
     text-align: center;
     position: relative;
+    margin-top: 0;
 }
 
 
@@ -2800,14 +2840,62 @@ h1, h2, h3, h4, h5, h6,
     }
     
     /* Optimize footer for mobile */
+    .footer {
+        padding: 3rem 0 1.5rem !important;
+    }
+    
     .footer-content {
         grid-template-columns: 1fr !important;
-        gap: 2rem;
+        gap: 1.5rem;
         text-align: center;
     }
     
     .footer-section {
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .footer-section p {
+        line-height: 1.4 !important;
+        margin-bottom: 0.5rem !important;
+        font-size: 0.95rem;
+    }
+    
+    .footer-section p br {
+        content: ' ';
+        display: inline;
+    }
+    
+    .footer-section p br::after {
+        content: ' ';
+    }
+    
+    .footer-section ul li {
+        margin-bottom: 0.4rem;
+    }
+    
+    .footer-section h4 {
+        margin-bottom: 0.75rem;
+        font-size: 1.1rem;
+    }
+    
+    .footer-logo {
+        justify-content: center;
+        margin-bottom: 0.75rem;
+    }
+    
+    .footer-logo-img {
+        height: 50px;
+    }
+    
+    .footer-bottom {
+        padding-top: 1.5rem;
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+    
+    .footer-certifications-section {
+        gap: 1rem;
+        margin: 1.5rem 0;
     }
     
     /* Better form layout */
