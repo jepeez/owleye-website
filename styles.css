@@ -400,6 +400,14 @@ h1, h2, h3, h4, h5, h6,
     margin-bottom: 4rem;
 }
 
+@media (max-width: 768px) {
+    .services-overview {
+        grid-template-columns: 1fr !important;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+}
+
 .service-overview-card {
     background: var(--bg-secondary);
     padding: 4rem;
@@ -409,6 +417,9 @@ h1, h2, h3, h4, h5, h6,
     box-shadow: var(--shadow-md);
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .service-overview-icon {
