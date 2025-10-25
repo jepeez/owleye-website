@@ -54,7 +54,7 @@ function switchLanguage(lang) {
 }
 
 // Initialize EmailJS
-emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
+emailjs.init("jRlnxM0jQmnkKepAa");
 
 // Initialize language switcher
 document.addEventListener('DOMContentLoaded', () => {
@@ -206,11 +206,11 @@ if (quoteForm) {
             phone: formData.get('phone') || 'Not provided',
             service: formData.get('service'),
             message: formData.get('message'),
-            to_email: 'joni.sainio@owleye.fi'
+            to_email: 'info@owleye.fi'
         };
         
         // Send email using EmailJS
-        emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+        emailjs.send('service_wm7u54p', 'template_t4ds63r', templateParams)
             .then(function(response) {
                 console.log('SUCCESS!', response.status, response.text);
                 const successMsg = currentLanguage === 'fi' ? 
