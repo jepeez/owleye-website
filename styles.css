@@ -1709,11 +1709,11 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .service-card:nth-child(even) {
-    background: var(--bg-accent);
+    background: rgba(255, 255, 255, 0.3);
 }
 
 .service-card:nth-child(odd) {
-    background: var(--bg-secondary);
+    background: transparent;
 }
 
 
@@ -2946,7 +2946,7 @@ h1, h2, h3, h4, h5, h6,
     }
     
     .footer-section ul li {
-        margin-bottom: 0.15rem;
+        margin-bottom: -0.9rem;
         font-size: 0.9rem;
         line-height: 1.3;
     }
