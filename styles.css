@@ -1770,6 +1770,9 @@ h1, h2, h3, h4, h5, h6,
 .service-features-list {
     list-style: none;
     margin-top: 1.5rem;
+    overflow: visible;
+    max-height: none;
+    height: auto;
 }
 
 .service-features-list li {
