@@ -560,6 +560,22 @@ h1, h2, h3, h4, h5, h6,
     position: relative;
 }
 
+/* Drone Services Styling */
+.drone-services {
+    background: var(--gradient-section);
+}
+
+.drone-services::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(91, 200, 175, 0.3) 20%, rgba(91, 200, 175, 1) 50%, rgba(91, 200, 175, 0.3) 80%, transparent 100%);
+    z-index: 10;
+}
+
 .services::after {
     content: '';
     position: absolute;
@@ -2742,8 +2758,8 @@ h1, h2, h3, h4, h5, h6,
 /* Adjust size on mobile */
 @media (max-width: 768px) {
     .floating-drone {
-        width: 120px;
-        display: none;
+        width: 100px;
+        display: block;
     }
 }
 
