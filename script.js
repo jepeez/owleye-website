@@ -206,7 +206,7 @@ if (quoteForm) {
             phone: formData.get('phone') || 'Not provided',
             service: formData.get('service'),
             message: formData.get('message'),
-            to_email: 'info@owleye.fi'
+            to_email: 'joni.sainio@owleye.fi'
         };
         
         // Send email using EmailJS
